@@ -39,7 +39,7 @@ All the fonts and stuff have been included already in the appropriate folders.
 
 ## 👩‍⚖️ License
 
-[MIT](/license) License
+[MIT](./LICENSE.md) License
 
 
 ## 🙏 Acknowledgements
