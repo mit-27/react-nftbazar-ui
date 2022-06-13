@@ -8,7 +8,7 @@
 @layer base {
     body {
       /* @apply h-screen bg-[url('./assets/bg_image.png')] bg-cover; */
-      @apply h-screen bg-primarylight;
+      @apply h-screen bg-primarybg;
     }
   }
 
