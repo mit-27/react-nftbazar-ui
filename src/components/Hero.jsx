@@ -1,11 +1,17 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+
 
 const Hero = () => {
   return (
     <div className='grid grid-cols-4 max-w-[1240px] mx-auto h-auto'>
 
       {/* Left side content */}
-      <div className='col-span-1 flex flex-col gap-8 mt-[40%]'>
+      <motion.div
+      initial={{x:-50,opacity:0}}
+      animate={{x:0,opacity:1}}
+      transition={{duration:0.5,delay:0.5,ease:"easeInOut"}}
+       className='col-span-1 flex flex-col gap-8 mt-[40%]'>
         <div className='flex flex-col gap-1'>
           <h1 className='text-5xl font-sans font-bold'>Discover,</h1>
           <h1 className='text-5xl font-sans font-bold'>collect,</h1>
@@ -14,14 +20,22 @@ const Hero = () => {
         </div>
         <p className='font-Archivo font-medium'>World’s fast growing NFTs bazar based on collectible NFTs.</p>
         <button className="btn px-2 w-[60%] py-3 flex justify-center">View Collection <img src={require('../assets/right_arrow.png')} width={7} height={7} className="ml-2 mt-1" alt="" /> </button>
-      </div>
+      </motion.div>
       
       {/* Image for center */}
-      <img src={require('../assets/hero_image.png')} className="col-span-2 w-[60%] ml-10"  alt="Hero Image" />
+      <motion.img 
+      initial={{y:70,opacity:0}}
+      animate={{y:0,opacity:1}}
+      transition={{duration:0.8,ease:"easeInOut"}}
+      src={require('../assets/hero_image.png')} className="col-span-2 w-[60%] ml-10"  alt="Hero Image" />
 
       {/* Right side content */}
       
-      <div className='flex flex-col col-span-1 mt-[40%] gap-9 items-center w-full'>
+      <motion.div 
+      initial={{x:50,opacity:0}}
+      animate={{x:0,opacity:1}}
+      transition={{duration:0.5,delay:0.5,ease:"easeInOut"}}
+      className='flex flex-col col-span-1 mt-[40%] gap-9 items-center w-full'>
         {/* Card */}
         <div className='p-8 rounded-xl drop-shadow-lg bg-[#FAFFFF] flex flex-col gap-3 w-full'>
           <h2 className='font-Archivo text-xl font-bold'>Silver the <span className='text-primary'>Hedgehog</span></h2>
@@ -72,7 +86,7 @@ const Hero = () => {
 
 
         </div>
-      </div>
+      </motion.div>
 
 
     </div>
