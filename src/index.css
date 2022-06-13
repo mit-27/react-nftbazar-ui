@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +7,22 @@
 
 @layer base {
     body {
-      @apply h-screen ;
+      /* @apply h-screen bg-[url('./assets/bg_image.png')] bg-cover; */
+      @apply h-screen bg-primarylight;
     }
   }
+
+@layer components{
+    .btn {
+        @apply font-Archivo font-medium py-2 m-1 bg-primary rounded-full drop-shadow-lg shadow-primarylight text-white;
+    }
+
+    .nav-item{
+        @apply font-Archivo font-medium p-1 m-1 ;
+        /* hover:border-b-2 rounded-sm border-b-primary hover:text-primary */
+    }
+
+    .active{
+      @apply text-primary;
+    }
+}

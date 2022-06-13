@@ -6,10 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Archivo: ["Archivo", "sans-serif"]
+        Archivo: ["Archivo", "sans-serif"],
+        Galano: ["Darker Grotesque", "sans-serif"]
       },
       colors: {
         primary: '#2DCACF',
+        primarylight: '#E8FFFF',
       }
     },
   },
