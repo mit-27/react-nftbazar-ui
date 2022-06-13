@@ -9,6 +9,12 @@ You should visit the site to see animation.
 
 ![NFTBazar](https://user-images.githubusercontent.com/63452683/173348403-7c9332a0-95d0-4c4e-a7ef-31890dc0b4d6.png)
 
+## 🧑‍💻 Tech Stack 
+
+- [ReactJS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
 ## 🏃‍♂️ Run Locally
 
 1. Clone the project
